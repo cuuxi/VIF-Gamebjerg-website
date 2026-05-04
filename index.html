@@ -4,53 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gamebjerg LAN – VIF Esport</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <nav>
+    <div class="nav-logo">VIF <span>Esport</span></div>
+    <ul>
+      <li><a href="#hero" class="active">Forside</a></li>
+      <li><a href="#om">Om</a></li>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#tilmeld" class="btn-outline">Tilmeld dig</a>
+  </nav>
+
   <header id="hero">
-    <nav>
-      <span class="logo">VIF Esport</span>
-      <ul>
-        <li><a href="#om">Om</a></li>
-        <li><a href="#info">Info</a></li>
-        <li><a href="#program">Program</a></li>
-        <li><a href="#tilmeld">Tilmeld</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
+    <div class="hero-stripes"></div>
     <div class="hero-content">
-      <h1>Gamebjerg</h1>
-      <p class="tagline">VIF Esports store LAN-event</p>
-      <a href="#tilmeld" class="btn">Tilmeld dig nu</a>
+      <div class="hero-text">
+        <h1>GAMEBJERG</h1>
+        <p class="tagline">FÆLLESSKAB. GAMING. KOMPETITION.</p>
+        <p class="hero-desc">VIF Esports store LAN-event – tag din PC med og vær klar til en uforglemmelig weekend fyldt med turneringer og fællesskab.</p>
+        <div class="hero-btns">
+          <a href="#tilmeld" class="btn-primary">Tilmeld dig nu &rsaquo;</a>
+          <a href="#om" class="btn-ghost">Læs mere &rsaquo;</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="badge-ring">
+          <div class="badge-inner">
+            <span class="badge-title">VIF</span>
+            <span class="badge-sub">ESPORT</span>
+            <span class="badge-star">★</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
   <section id="om">
     <div class="container">
-      <h2>Om Gamebjerg</h2>
-      <p>Gamebjerg er VIF Esports årlige LAN-party, hvor gamere samles for en uforglemmelig weekend fyldt med konkurrencer, fællesskab og gaming døgnet rundt. Tag din PC med og vær klar til action!</p>
+      <div class="om-grid">
+        <div class="om-text">
+          <p class="section-label">Om Gamebjerg</p>
+          <h2>MERE END BARE GAMING</h2>
+          <p>Vi tror på, at LAN-events handler om mere end bare at vinde. Det handler om at mødes, udvikle sig og have det sjovt – døgnet rundt. Gamebjerg er VIF Esports flagskib-event for alle gamere.</p>
+          <a href="#tilmeld" class="btn-primary">Sikr din plads &rsaquo;</a>
+        </div>
+        <div class="om-image">
+          <div class="image-placeholder">
+            <span>📷 Billede kommer snart</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="info">
     <div class="container">
-      <h2>Praktisk info</h2>
+      <p class="section-label">Praktisk info</p>
+      <h2>ALT DU SKAL VIDE</h2>
       <div class="info-grid">
         <div class="info-card">
-          <h3>Dato</h3>
+          <div class="card-icon">📅</div>
+          <h3>DATO</h3>
           <p>TBA</p>
         </div>
         <div class="info-card">
-          <h3>Sted</h3>
+          <div class="card-icon">📍</div>
+          <h3>STED</h3>
           <p>TBA</p>
         </div>
         <div class="info-card">
-          <h3>Pris</h3>
+          <div class="card-icon">🎟️</div>
+          <h3>PRIS</h3>
           <p>TBA</p>
         </div>
         <div class="info-card">
-          <h3>Pladser</h3>
+          <div class="card-icon">👥</div>
+          <h3>PLADSER</h3>
           <p>Begrænset antal</p>
         </div>
       </div>
@@ -59,38 +96,56 @@
 
   <section id="program">
     <div class="container">
-      <h2>Program</h2>
-      <ul class="program-list">
-        <li><span class="time">Dag 1</span> Ankomst & opsætning</li>
-        <li><span class="time">Dag 1</span> Åbningsceremoni & turneringer starter</li>
-        <li><span class="time">Dag 2</span> Gaming hele dagen – finaler</li>
-        <li><span class="time">Dag 2</span> Præmieoverrækkelse & afslutning</li>
-      </ul>
+      <p class="section-label">Hvad vi tilbyder</p>
+      <h2>ET STÆRKT PROGRAM</h2>
+      <div class="program-grid">
+        <div class="program-card">
+          <div class="card-icon">🎮</div>
+          <h3>TURNERINGER</h3>
+          <p>Deltag i interne og eksterne turneringer og mærk spændingen.</p>
+        </div>
+        <div class="program-card">
+          <div class="card-icon">🏆</div>
+          <h3>PRÆMIER</h3>
+          <p>Kæmp om flotte præmier til de bedste spillere og hold.</p>
+        </div>
+        <div class="program-card">
+          <div class="card-icon">👾</div>
+          <h3>FÆLLESSKAB</h3>
+          <p>Et trygt og inkluderende miljø for alle med interesse for esport.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="tilmeld">
-    <div class="container">
-      <h2>Tilmeld dig</h2>
-      <p>Sikr din plads til Gamebjerg – udfyld formularen nedenfor.</p>
+  <section id="tilmeld" class="cta-section">
+    <div class="cta-stripes"></div>
+    <div class="container cta-content">
+      <h2>KLAR TIL AT VÆRE MED?</h2>
+      <p>Udfyld formularen og sikr din plads til Gamebjerg.</p>
       <form class="signup-form">
         <input type="text" placeholder="Navn" required />
         <input type="email" placeholder="Email" required />
         <input type="text" placeholder="Gamer-tag" />
-        <button type="submit" class="btn">Send tilmelding</button>
+        <button type="submit" class="btn-primary">Send tilmelding &rsaquo;</button>
       </form>
     </div>
   </section>
 
-  <section id="kontakt">
-    <div class="container">
-      <h2>Kontakt</h2>
-      <p>Har du spørgsmål? Skriv til os på <a href="mailto:info@vifesport.dk">info@vifesport.dk</a></p>
+  <footer id="kontakt">
+    <div class="footer-inner">
+      <div class="footer-logo">VIF <span>Esport</span></div>
+      <div class="footer-links">
+        <a href="#">Discord</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div class="footer-contact">
+        <span>✉ info@vifesport.dk</span>
+        <span>📍 VIF Esport, Danmark</span>
+      </div>
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 VIF Esport – Gamebjerg</p>
+    <p class="footer-copy">&copy; 2025 VIF Esport – Gamebjerg</p>
   </footer>
 
   <script src="js/main.js"></script>
