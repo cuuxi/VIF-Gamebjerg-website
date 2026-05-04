@@ -27,7 +27,7 @@
     <div class="hero-stripes"></div>
     <div class="hero-content">
       <div class="hero-text">
-        <h1>GAMEBJERG</h1>
+        <h1><span class="title-gold">GAMEBJERG</span><span class="title-white">LAN</span></h1>
         <p class="tagline">FÆLLESSKAB. GAMING. KOMPETITION.</p>
         <p class="hero-desc">18–20. september 2026 i Vestbjerg Idrætscenter – tag din PC med og vær klar til en uforglemmelig weekend fyldt med turneringer og fællesskab.</p>
         <div class="hero-btns">
@@ -57,6 +57,7 @@
         </div>
       </div>
     </div>
+
   </section>
 
   <section id="info">
@@ -121,7 +122,92 @@
     </div>
   </section>
 
-  <footer id="kontakt">
+  <div class="dgi-band">
+    <div class="container">
+      <div class="dgi-intro">
+        <div class="dgi-intro-text">
+          <p class="section-label">Officiel partner</p>
+          <h2>I SAMARBEJDE MED DGI ESPORT</h2>
+          <p>Gamebjerg afholdes i et stærkt partnerskab med DGI eSport, som arbejder for at fremme esport som en sund, social og inkluderende fritidsaktivitet i hele Danmark. Sammen skaber vi et event der er mere end konkurrence – det er fællesskab.</p>
+        </div>
+        <div class="dgi-logo-wrap">
+          <img src="assets/images/dgi-logo.png" alt="DGI eSport" class="dgi-logo-img" />
+        </div>
+      </div>
+
+      <div class="dgi-values">
+        <h3 class="dgi-values-title">DGI eSports værdier</h3>
+        <div class="dgi-values-grid">
+          <div class="dgi-value-card">
+            <div class="dgi-value-icon">🤝</div>
+            <h4>Fællesskab</h4>
+            <p>Gaming bringer mennesker tættere sammen – på tværs af alder, baggrund og niveau.</p>
+          </div>
+          <div class="dgi-value-card">
+            <div class="dgi-value-icon">🌍</div>
+            <h4>Inklusion</h4>
+            <p>eSport er for alle. Hos DGI eSport er der plads til enhver, uanset erfaring eller baggrund.</p>
+          </div>
+          <div class="dgi-value-card">
+            <div class="dgi-value-icon">💚</div>
+            <h4>Sundhed & trivsel</h4>
+            <p>Vi tror på gaming som en positiv del af en aktiv og balanceret hverdag.</p>
+          </div>
+          <div class="dgi-value-card">
+            <div class="dgi-value-icon">⭐</div>
+            <h4>Glæde & læring</h4>
+            <p>Sjov, mestring og udvikling går hånd i hånd – det er kernen i alt hvad vi laver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="kontakt" class="contact-section">
+    <div class="container">
+      <div class="contact-hero">
+        <p class="section-label">Foreningsturneringen</p>
+        <h2>TILMELD DIN FORENING</h2>
+        <p>I samarbejde med <strong>Esportsligaen</strong> har vi sørget for et stærkt turneringsprogram til Gamebjerg – herunder en dedikeret <strong>CS2 Foreningsturneringen</strong>, hvor foreninger kan deltage både <strong>online og onsite</strong>.</p>
+        <p>Turneringen afvikles i løbet af lørdagen, og finalen bliver vist på <strong>storskærm i LAN-hallen</strong> – så der er noget at kæmpe for.</p>
+      </div>
+      <div class="contact-form-wrap">
+        <p class="contact-form-label">Interesseret? Udfyld formularen og vi vender tilbage.</p>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xzdoeneo" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Kontaktperson</label>
+              <input type="text" id="name" name="name" placeholder="Dit fulde navn" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="din@email.dk" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="forening">Foreningens navn</label>
+              <input type="text" id="forening" name="forening" placeholder="F.eks. Aalborg Esport" required />
+            </div>
+            <div class="form-group">
+              <label for="antal">Forventet antal deltagere</label>
+              <input type="number" id="antal" name="antal" placeholder="F.eks. 10" min="1" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Besked</label>
+            <textarea id="message" name="message" rows="4" placeholder="Fortæl os lidt om jeres forening og eventuelle spørgsmål til turneringen..." required></textarea>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn-primary" id="submitBtn">Send tilmelding &rsaquo;</button>
+            <div class="form-status" id="formStatus"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
     <div class="footer-inner">
       <img src="assets/images/vif-esport-logo.png" alt="VIF Esport" class="footer-logo" />
       <div class="footer-links">
