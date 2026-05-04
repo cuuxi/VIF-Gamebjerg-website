@@ -95,14 +95,10 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 1.3rem;
-  color: #fff;
-  letter-spacing: 0.05em;
+  height: 48px;
+  width: auto;
+  display: block;
 }
-
-.nav-logo span { color: var(--gold); }
 
 nav ul {
   list-style: none;
@@ -249,49 +245,10 @@ nav ul a.active {
   flex-shrink: 0;
 }
 
-.badge-ring {
-  width: 220px;
-  height: 260px;
-  background: var(--gold);
-  clip-path: polygon(50% 0%, 100% 15%, 100% 80%, 50% 100%, 0% 80%, 0% 15%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 60px rgba(245,184,0,0.25);
-}
-
-.badge-inner {
-  width: 180px;
-  height: 214px;
-  background: var(--black);
-  clip-path: polygon(50% 0%, 100% 15%, 100% 80%, 50% 100%, 0% 80%, 0% 15%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-}
-
-.badge-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 2.8rem;
-  color: var(--gold);
-  line-height: 1;
-}
-
-.badge-sub {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: #fff;
-  letter-spacing: 0.2em;
-}
-
-.badge-star {
-  color: var(--gold);
-  font-size: 1rem;
-  margin-top: 4px;
+.hero-logo-img {
+  width: 280px;
+  height: auto;
+  filter: drop-shadow(0 0 40px rgba(245,184,0,0.3));
 }
 
 /* ── SECTION LABEL ── */
@@ -544,13 +501,9 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 1.4rem;
-  color: #fff;
+  height: 52px;
+  width: auto;
 }
-
-.footer-logo span { color: var(--gold); }
 
 .footer-links {
   display: flex;
