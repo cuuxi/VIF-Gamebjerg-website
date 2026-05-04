@@ -38,15 +38,22 @@ contactForm.addEventListener('submit', async function (e) {
 // Aktiv nav-link ved scroll
 const navLinks = document.querySelectorAll('nav ul a');
 const sections  = document.querySelectorAll('section[id], header[id]');
+const navHeight = document.querySelector('nav').offsetHeight;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
-      });
+function updateActiveLink() {
+  const scrollY = window.scrollY + navHeight + 8;
+  let current = sections[0].id;
+
+  sections.forEach(section => {
+    if (section.offsetTop <= scrollY) {
+      current = section.id;
     }
   });
-}, { threshold: 0.3 });
 
-sections.forEach(s => observer.observe(s));
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+}
+
+window.addEventListener('scroll', updateActiveLink, { passive: true });
+updateActiveLink();
